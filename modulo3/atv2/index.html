@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>CEP</title>
+  </head>
+  <body>
+    <main>
+      <h1>Consultar endereço</h1>
+      <form id="cepForm">
+        <input
+          type="text"
+          class="input-cep"
+          id="cepInput"
+          placeholder="Digite um CEP"
+          required
+        />
+        <button type="submit" class="button-add">Procurar</button>
+      </form>
+
+      <div class="address-container">
+        <h2 class="address-container-h2">Histórico de Endereços</h2>
+        
+        <ul class="address-List" id="addressList"></ul>
+      </div>
+
+      <script src="main.js"></script>
+      </script>
+    </main>
+  </body>
+</html>
