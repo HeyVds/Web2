@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Filmes Favoritos</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Meus Filmes/Séries Favoritos</h1>
+
+      <div class="form-group">
+        <input type="number" id="id" placeholder="ID (para atualizar/buscar)" />
+        <input type="text" id="titulo" placeholder="Título" />
+        <input type="text" id="genero" placeholder="Gênero" />
+        <input type="number" id="nota" placeholder="Nota (0 a 10)" />
+      </div>
+
+      <div class="form-group">
+        <button onclick="adicionarFilme()">Adicionar</button>
+        <button onclick="atualizarFilme()">Atualizar</button>
+        <button onclick="buscarFilme()">Buscar por ID</button>
+      </div>
+
+      <h2>Lista de Filmes</h2>
+      <ul id="listaFilmes"></ul>
+    </div>
+
+    <script src="./scripts/app.js"></script>
+  </body>
+</html>
