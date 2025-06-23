@@ -1,0 +1,7 @@
+
+CREATE TABLE IF NOT EXISTS filmes (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    titulo TEXT NOT NULL,
+    genero TEXT NOT NULL,
+    nota REAL NOT NULL CHECK (nota >= 0 AND nota <= 10)
+);
